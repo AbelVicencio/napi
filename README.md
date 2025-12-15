@@ -1,6 +1,25 @@
 # 📊 API de Inteligencia Delictiva: Homicidios México 2024
 
-Esta API REST proporciona acceso programático, analítico y eficiente a los datos de homicidios en México durante el año 2024. Diseñada para analistas de datos, desarrolladores y científicos de datos, transforma un archivo plano CSV en una base de datos consultable en tiempo real con capacidades de agregación y filtrado.
+Bienvenido a la API REST de Homicidios. Esta herramienta libera el potencial de los datos demográficos y geoespaciales de homicidios en México durante 2024.
+
+## 📘 Guía para Expertos en Datos (No Desarrolladores)
+
+Si eres un analista de datos, actuario o científico de datos acostumbrado a CSVs y Excel, pero nuevo en APIs, esta sección es para ti.
+
+### ¿Qué es esto?
+Esta **REST API** (Interfaz de Programación de Aplicaciones) es como un "camarero digital". En lugar de pedirte que descargues y filtres un archivo de 50MB cada vez, tú pides exactamente lo que necesitas (el "pedido") y la API te lo trae al instante (la "respuesta").
+
+### ¿Cómo funciona?
+Usamos el protocolo **HTTP** (el mismo de la web).
+- **GET**: Es el verbo principal que usarás aquí. Significa "Dame datos".
+- **Endpoint**: Es la URL específica donde vive un recurso (ej. `/homicidios`).
+- **Parámetros**: Son los filtros. En `Swagger` (esta página), llenas cajitas y nosotros construimos la URL por ti (ej. `?estado=Aguascalientes`).
+- **JSON**: El formato de respuesta. Piensa en él como filas de Excel pero organizadas en estructuras jerárquicas fáciles de leer por máquinas (y humanos).
+
+### ¿Por qué usar esta API en lugar del CSV?
+1.  **Agilidad**: No necesitas cargar todo el dataset en memoria para ver un resumen de una entidad.
+2.  **Integración**: Puedes conectar PowerBI, Tableau o Excel directamente a estos endpoints Web.
+3.  **Análisis pre-calculado**: Ofrecemos endpoints de "Resúmenes" que ya hacen las agregaciones (`groupby`) por ti.
 
 ---
 
